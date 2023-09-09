@@ -1,0 +1,1 @@
+DROP TABLE FCI_filme_cinema;

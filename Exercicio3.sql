@@ -1,0 +1,1 @@
+ALTER TABLE FIL_filme ADD fil_cd_tipo INT FOREIGN KEY REFERENCES TIP_tipo (tip_cd_tipo);
