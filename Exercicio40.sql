@@ -2,10 +2,8 @@
 
 -- IN/NOT IN
 
-SELECT ato_nm_ator, ato_sx_ator FROM ATO_ator
-WHERE ato_rg_ator IN (SELECT ato_rg_ator FROM ATO_ator_novo);
+SELECT ato_nm_ator, ato_sx_ator FROM ATO_ator WHERE ato_rg_ator IN (SELECT ato_rg_ator FROM ATO_ator_novo);
 
 -- EXISTS/NOT EXISTS
 
-SELECT ato_nm_ator, ato_sx_ator FROM ATO_ator
-WHERE EXISTS (SELECT ato_rg_ator FROM ATO_ator_novo WHERE ato_rg_ator = ato_rg_ator);
+SELECT ato_nm_ator, ato_sx_ator FROM ATO_ator WHERE EXISTS (SELECT ato_rg_ator FROM ATO_ator_novo WHERE ato_rg_ator = ato_rg_ator);
