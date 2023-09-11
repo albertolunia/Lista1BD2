@@ -1,7 +1,7 @@
 CREATE TABLE PAI_pais(
   pai_cd_pais INT IDENTITY(1,1) NOT NULL,
   pai_nm_pais VARCHAR(50) NOT NULL,
-  pai_nm_nacionalidade VARCHAR(50) NOT NULL,
+  pai_dc_nacionalidade VARCHAR(50) NOT NULL,
   PRIMARY KEY (pai_cd_pais));
 
 CREATE TABLE EST_estado(
@@ -54,7 +54,7 @@ CREATE TABLE TIP_tipo(
 CREATE TABLE FIL_filme(
   fil_cd_filme INT IDENTITY(1,1) NOT NULL,
   fil_tl_original VARCHAR(85) NOT NULL,
-  fil_tl_portugues VARCHAR(85) NOT NULL,
+  fil_tl_portugues VARCHAR(85),
   fil_cd_genero INT NOT NULL,
   fil_cd_duracao VARCHAR(20) NOT NULL,
   fil_dc_importancia VARCHAR(99) NOT NULL,
